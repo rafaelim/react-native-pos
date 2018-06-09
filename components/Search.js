@@ -13,7 +13,7 @@ export default class Search extends Component {
                     <Text style={props.style.title}> {data.nome} </Text>
                     <Text> {data.criador} </Text>
                     <Button onPress={() =>
-                        props.navigator.navigate("Detalhes", { resume: data.info })}
+                        props.navigator.navigate("Detalhes", { data })}
                         title="Detalhes"
                     />
                 </View>
